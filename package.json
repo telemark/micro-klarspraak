@@ -1,0 +1,62 @@
+{
+  "name": "micro-klarspraak",
+  "description": "Check your text against lix and kansellisten",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=7.7.3"
+  },
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "start": "micro",
+    "now-deploy": "npm test && now --npm && now alias"
+  },
+  "keywords": [
+    "microservice",
+    "micro",
+    "klarspråk",
+    "klarspraak",
+    "Telemark fylkeskommune"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telemark/micro-klarspraak.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/micro-klarspraak/issues"
+  },
+  "homepage": "https://github.com/telemark/micro-klarspraak",
+  "now": {
+    "alias": [
+      "klarspraak.mircro.t-fk.win"
+    ],
+    "type": "npm"
+  },
+  "devDependencies": {
+    "ava": "0.18.2",
+    "coveralls": "2.12.0",
+    "nsp": "2.6.3",
+    "nyc": "10.1.2",
+    "standard": "9.0.2",
+    "test-listen": "1.0.1"
+  },
+  "dependencies": {
+    "axios": "0.15.3",
+    "check-kansellisten": "1.0.0",
+    "lix": "2.0.4",
+    "marked": "0.3.6",
+    "micro": "7.2.0",
+    "striptags": "3.0.1"
+  }
+}
