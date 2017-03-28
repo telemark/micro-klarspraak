@@ -39,7 +39,7 @@
   "homepage": "https://github.com/telemark/micro-klarspraak",
   "now": {
     "alias": [
-      "klarspraak.micro.t-fk.win"
+      "klarspraak.micro.t-fk.no"
     ],
     "type": "npm"
   },
