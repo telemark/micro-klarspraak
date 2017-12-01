@@ -55,7 +55,7 @@
     "axios": "0.17.1",
     "check-kansellisten": "1.0.0",
     "lix": "2.0.4",
-    "marked": "0.3.6",
+    "marked": "0.3.7",
     "micro": "9.0.2",
     "striptags": "3.1.0"
   }
