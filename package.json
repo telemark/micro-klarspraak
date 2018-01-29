@@ -54,7 +54,7 @@
   "dependencies": {
     "axios": "0.17.1",
     "check-kansellisten": "1.0.0",
-    "lix": "2.0.4",
+    "lix": "3.0.0",
     "marked": "0.3.9",
     "micro": "9.0.2",
     "striptags": "3.1.1"
