@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=7.7.4"
+    "node": ">=8.9.4"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -19,8 +19,10 @@
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
     "start": "micro",
-    "now-deploy": "npm test && now --npm && now alias"
+    "dev": "micro-dev",
+    "deploy": "npm test && now && now alias"
   },
   "keywords": [
     "microservice",
@@ -31,21 +33,25 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/telemark/micro-klarspraak.git"
+    "url": "git+https://github.com/telemark/micro-klarspraak.git"
   },
   "bugs": {
     "url": "https://github.com/telemark/micro-klarspraak/issues"
   },
-  "homepage": "https://github.com/telemark/micro-klarspraak",
+  "homepage": "https://github.com/telemark/micro-klarspraak#readme",
   "now": {
     "alias": [
       "klarspraak.micro.t-fk.no"
     ],
-    "type": "npm"
+    "type": "npm",
+    "engines": {
+      "node": "8.9.4"
+    }
   },
   "devDependencies": {
     "ava": "0.19.1",
     "coveralls": "3.0.0",
+    "micro-dev": "2.2.0",
     "nsp": "3.1.0",
     "nyc": "11.4.1",
     "standard": "10.0.3",
@@ -54,7 +60,7 @@
   "dependencies": {
     "axios": "0.17.1",
     "check-kansellisten": "1.0.0",
-    "lix": "3.0.0",
+    "lix-index": "1.0.0",
     "marked": "0.3.12",
     "micro": "9.1.0",
     "striptags": "3.1.1"
