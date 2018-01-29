@@ -1,7 +1,7 @@
 {
   "name": "micro-klarspraak",
   "description": "Check your text against lix and kansellisten",
-  "version": "1.0.23",
+  "version": "1.1.0",
   "license": "MIT",
   "private": true,
   "author": {
