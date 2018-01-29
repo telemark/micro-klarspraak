@@ -56,7 +56,7 @@
     "check-kansellisten": "1.0.0",
     "lix": "3.0.0",
     "marked": "0.3.12",
-    "micro": "9.0.2",
+    "micro": "9.1.0",
     "striptags": "3.1.1"
   }
 }
