@@ -39,15 +39,6 @@
     "url": "https://github.com/telemark/micro-klarspraak/issues"
   },
   "homepage": "https://github.com/telemark/micro-klarspraak#readme",
-  "now": {
-    "alias": [
-      "klarspraak.micro.t-fk.no"
-    ],
-    "type": "npm",
-    "engines": {
-      "node": "8.9.4"
-    }
-  },
   "devDependencies": {
     "ava": "0.25.0",
     "coveralls": "3.0.2",

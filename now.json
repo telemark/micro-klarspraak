@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "micro-klarspraak",
+  "alias": [
+    "klarspraak.micro.t-fk.no"
+  ],
+  "builds": [
+    { "src": "index.js", "use": "@now/node" }
+  ]
+}
