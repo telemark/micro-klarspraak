@@ -6,7 +6,7 @@ const getTextFromUrl = require('./lib/get-text-from-url')
 const calculateScore = require('./lib/calculate-score')
 
 module.exports = async (request, response) => {
-  const {query} = await parse(request.url, true)
+  const { query } = await parse(request.url, true)
   const data = ['POST'].includes(request.method) ? await json(request) : query
 
   if ((data.text && data.text.length > 0) || (data.url && data.url.length > 0)) {
