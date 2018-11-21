@@ -1,5 +1,3 @@
-const readFileSync = require('fs').readFileSync
-const marked = require('marked')
 const { json, send } = require('micro')
 const { parse } = require('url')
 const getTextFromUrl = require('./lib/get-text-from-url')
@@ -14,8 +12,21 @@ module.exports = async (request, response) => {
     const result = calculateScore(input)
     send(response, 200, result)
   } else {
-    const readme = readFileSync('./README.md', 'utf-8')
-    const html = marked(readme)
-    send(response, 200, html)
+    const readme = `
+    Usage
+    *********************
+    POST text to analyze
+    curl -d '{"text": "Check me Im a nice text"}' https://klarspraak.micro.t-fk.win
+    
+    or
+
+    POST url to analyze
+    curl -d '{"url": "https://www.telemark.no"}' https://klarspraak.micro.t-fk.win
+
+    License: MIT
+
+    https://github.com/telemark/micro-klarspraak
+    `
+    send(response, 200, readme)
   }
 }

@@ -60,7 +60,6 @@
     "axios": "0.18.0",
     "check-kansellisten": "1.0.0",
     "lix-index": "1.0.0",
-    "marked": "0.5.2",
     "micro": "9.3.3",
     "striptags": "3.1.1"
   }
