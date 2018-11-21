@@ -1,3 +1,8 @@
-*
-!lib
-!index.js
+.dockerignore
+.travis.yml
+Dockerfile
+LICENSE
+node_modules
+test
+README.md
+renovate.json
