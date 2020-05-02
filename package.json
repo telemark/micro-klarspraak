@@ -50,7 +50,7 @@
   "dependencies": {
     "axios": "0.18.0",
     "check-kansellisten": "1.0.0",
-    "lix-index": "1.0.1",
+    "lix-index": "2.0.0",
     "micro": "9.3.4",
     "striptags": "3.1.1"
   }
